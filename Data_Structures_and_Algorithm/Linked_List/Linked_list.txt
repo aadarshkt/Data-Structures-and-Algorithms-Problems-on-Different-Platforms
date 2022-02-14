@@ -1,0 +1,17 @@
+Problem with arrays.
+ * size is fixed and preallocated.
+ * worst case insertion is 0(n) even with vector because once size increases more than n all elements are to be copied.
+ * insertion and deletion at the middle or beginning is very costly.
+ * implementation of queue and deque is hard with arrays.
+ * insert and delete with linked list is very easy.
+ * elements do not have to be at contiguous locations.
+
+Advantages and disadvantages of circular linked list.
+ * we can insert at the end and beginning can be done in O(1) time just by maintaining one tail.
+ * to print circular linked list use do while loop.
+ * 
+
+Advantages of circular doubly linked list.
+ * We can get the last node in constant time.
+ * Use do while loop to print the loop.
+

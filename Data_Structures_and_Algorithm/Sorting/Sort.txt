@@ -1,0 +1,41 @@
+example of stable sorting algorthm - bubble sort, insertion sort, Merge sort.
+example of stable sorting algorthm - Selection sort, quick sort, heap sort.
+
+c++ stl sort(arr, arr+n) does sorting in O(nlogn)
+
+Stable sorting means if two elements are intially sorted then their original position in the array will be not be changed.
+
+1.Selection sort
+  * Does less memory writes
+  * Basic idea for heap sort.
+  * Not stable 
+  * Not requires extra memory space for sorting.(In place)(No auxiliary space)
+  * O(n^2)
+
+2.Insertion sort
+  * O(n^2) worst and O(n) best
+  * In-place and stable
+  * For small arrays.
+  * basically u pick a element and place it to it's correct position.
+
+3.Merge sort
+ * Divide, conquer and Merge.
+ * stable.
+ * O(nlogn) time and O(n) space.(not in place.)
+ * but best in time is quicksort.
+ * used in external sorting.(means parts can be sorted independently)
+ * well suited for linked lists works in O(1) space.
+ * for arrays quicksort is best and for linkedlist mergesort.
+ * python uses timsort which is variation of mergesort and insertion sort.
+
+4.Quick sort
+ * not stable.
+ * divide and conquer algorthrithm
+ * worst case O(n2);
+ * 0(n) space. and best space 0(logn)
+ * faster
+ * tail recursive.
+ * average case O(nlogn).
+ * partition function is used.
+ * hoare's partition is the most easy to understand and fastest.
+ * use mergesort when stablity is required and quick sort when it is not required.

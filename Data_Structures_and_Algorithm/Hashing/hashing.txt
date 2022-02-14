@@ -1,0 +1,89 @@
+Hashing
+ * expert at search, insert, delete, takes O(1) time.
+ * not useful for finding closest value, sorted data, and prefix searching.
+ * use avl and red black tree for finding closest value and sorted data.
+ * for prefix searching (like only a part of key) use trie.
+ * trie provides quick prefix search (a implementation of dictionary for strings).
+ * second most popular data structures after arrays.
+ * used everywhere in computer science.
+
+Applications.
+ * dictionary
+ * database indexing - improves performance of databases by read write data to the disk.
+ * cryptography.
+ * cache for different websites for faster loading.
+ * used in compilers for quick testing whether syntax is correct.
+ * when anyone says associative arrays he/she means hashing.
+
+
+collision handling
+ * birthday paradox if there are 23 people in a room, there is a possibility of 1/2 that two people will have
+ * same birthday and if there are 70 people in a room there 99.99 % chance that two people will have same birthday.
+ * Thus u use perfect hashing.
+ * use linked list.
+
+performance
+ * m = no. of slots in hash table
+ * n = no. of key to be inserted to hash table.
+ * load factor = n / m;(alpha)
+ * lower the alpha the better.
+ * expected chain length - alpha (imagin more keys than slots)
+ * time for search, insert, delete = O(1+alpha)
+
+Chaining
+ * linked list - search, delete, insert O(length) (problem of non-cache friendliness)
+ * dynamic sized arrays(vector in C++)
+ * self balancing BST(avl, red black tree) time - O(logl) pros - not cache friendly (not stored at contiguous location)
+
+Open addressing
+ * cache friendly because every thing is there in hash.
+ * No. of slots >= no. of keys
+ * done by linear probing and double hashing.
+ * for searching we traverse through the whole array, if we find a empty slot we stop or if one cycle is completed.
+ 
+ 
+Linear Probing 
+ * searching for next empty slot linearly.
+ * to solve the problem of hashing use hash(key, i) = (h(key) + i^2) % m; where h(key) = key % 7;
+ * problem of forming in clusters.
+
+Double hashing
+ * hash(key, i) = (h1(key) + i * h2(key)) % m;
+ * No clustering 
+ * distribution more uniform than linear or quadratic hashing.
+ * for example take h1(key) = key % 7, h2(key) = 6 - (key % 6); 
+ * increase i everytime a collision happens.
+ * h2(key) and m should be relatively prime.
+ pseudo code
+   void doublehashinginsert(int key)
+   {
+        if(table if full)
+          error;
+         
+        probe = h1(key) offset = h2(key);
+        while(table[probe] is occupied)
+         probe = (probe + offset) % m ;
+    
+        table[probe] = key;
+
+   }
+* 1-alpha are empty slots 
+* expected no. of probing required = 1/(1-alpha);
+* means that more filled the slots is with double hashing more probing is required (changing i multiple times)
+
+Open Addressing vs Chaining
+ * hash table may become full vs hash table never fills.
+ * better chache performance vs lower cahce perfomance.
+ 
+Unordered set 
+ * based on hashing
+ * O(1) on average. for insert erase find count
+ * O(1) for begin() end() cbegin() cend() size() empty()
+
+Unordered map
+ * based on red black tree.
+ * map is based on hashing
+ * stores key value pairs.
+ * no order of keys.
+ * O(1) begin() end() size() empty() in worst case
+ * O(1) average count() find() erase() insert() at []
