@@ -16,7 +16,7 @@ void mergeSort(int arr1[], int arr2[], int n1, int n2)
     for (int i = 0; i < n1; i++)
         cout << array[i] << " ";
     cout << endl;
-
+    
     //Better approach is just add two arrays and do sort(arr, arr+n) O(nlogn);
 
     for (int i = 0; i < n2; i++)

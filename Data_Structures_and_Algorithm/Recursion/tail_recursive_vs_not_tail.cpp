@@ -17,26 +17,19 @@ int factorial1(int n){
 
 //Tail Recursive solution.
 
-  int a = 1;
+int a = 1;
 
-int factorial2(int n){
-
-  
-
-    if(n == 1 || n == 0){
+int factorial2(int n)
+{
+    if(n==0 || n==1)
         return 1;
-    }
 
     a *= n * (n-1);
 
     factorial2(n-2);
 
-return a;
-
-
-
+    return a;
 }
-
 
  
 int main(){

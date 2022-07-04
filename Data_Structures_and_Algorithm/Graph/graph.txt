@@ -1,0 +1,91 @@
+1. Introduction
+
+* It is used when we want to show connections between any two nodes.
+* For example social connection.
+* It can be represented by pair of sets. Vertices and edges.
+* It can be directed or undirected.
+* Example of directed --> One page has link two many pages. --> This data can be represented by directed graph.
+* Exmaple of non-directed --> Social network of friends --> No direction needed, If one is friend of other other is also a friend but if one page has link to another that does not mean that other page has also the link.
+* Degree of a vertex is no of edges attached to it.
+* Maximum edges of undirected graph --> v * (v-1) / 2. v is the total vertex.
+* Indegree of a directed graph --> No edges towards it.
+* Outdegree of a directed graph --> No of edges outwards it.
+* Maximum edges in directed graph --> v * (v-1) //without self edge.
+* A walk is any set of vertices so that you can traverse along it.
+* A path is a special walk with no repetition allowed.
+* A Cycle is walk that ends and start at the same vertex.
+* A Acylic graph doesn't have a cycle.
+* Directed acyclic graph (DAG) is associated with topological sort.
+
+* Weighted graph example --> Road network connecting different cities.Weight is length of the road.
+
+2. Adjacency matrix representation
+
+* Adjacency matrix for non-directed graph is symmetric.
+* All diagonal elements are zero if self edges are not present in adjacency matrix.
+* If graph contains strings, you will use hashmaps to represent the string and index along with matrix.
+* Space required is O(v * v)
+* Time complexity --> 1) Check if u and v are adjacent - theta(1)
+                      2) Find all the vertics adjacent to u - theta(v)
+                      3) Find degree of u - theta(v)
+                      4) Add or remove an edge - theta(1)
+                      5) Add or remove a vertex - theta(v2) - we have to make a new matrix.
+
+3. Adjacency list representation
+
+* Represented as array of list.
+* we list all adjacent of a vertex in a list.
+* use dynamic sized arrays because of their cache friendliness.
+* Space required -> 1) undirected --> theta(v + 2 * E) 2) Directed --> theta(v + E) ****doubt --> v + is not required****
+* Time complexity --> 1) check if u and v are adjacent - O(v)
+                      2) Find all adjacent vertices of u - theta(degree(u))
+                      3) Find the degree of u - O(1) (getting size if simple O(1) operation)
+                      4) Adding an edge - theta(1) (imagine it like array(fixed size you can just do arr[i] = 1) but it is sometimes O(n))
+                      5) Removing an edge - O(v) - this you will do two times. //Removing requires shifting all the rest element in the worst case you have to shift n-1 elements so time complexity is O(N).
+
+4. Comparision.
+
+* Real world implementation is sparse. So memory wise adjacency list is better.It consumes less space.
+* Check if there is an edge from u to v. Mat -> theta(1) list -> O(v)
+* Finding all adjacent vertices. Mat -> theta(v) list -> theta(degree(u))
+* Add an edge. Mat -> theta(1) list -> theta(1)
+* Remove an edge. Mat -> theta(1) list -> O(v) //
+
+5. Application of BFS.
+
+* Gives shortest path from start to adjacent node in an unweighted graph.
+* Web crawlers use bfs to traverse from link to many links, from those links to other links.
+* Peer to peer networks like bittorrent. First it will search within your neighbours then your neighbour's neighbour.
+* Social networking search.
+* Garbage collection. Garbage collector first finds the unused memory located anywhere on the memory, then collects memory pointed by that memory.
+* Cycle detection.
+* Broadcasting.
+
+6. Application of DFS.
+
+* Cycle detection
+* topological sorting
+* strongly connected components. 1) Kosaraju's Algo 2) Tarjans Algo
+* solving maze and similar problems -> DFS preffered. Rat in a maze.
+* Path finding. Because in recursion call stack we have path from source to destination. but not in BFS.
+
+7. Minimum Spanning tree.
+
+* Undirected graph having v vertices and v - 1 edges.
+* Minimum spanning tree means edges are spanning to every edge and it is minimum. 
+* We will be given undirected, weighted, connected graph.
+
+8. Shortest path.
+
+* shortest path unweighted -> use BFS.
+* shortest path directed weighted acyclic --> use topological sort.
+* shortest path directed or not directed with no negative edges --> use dijkstra
+* shortest path directed or undirected with neg edges --> use bellman ford.
+
+
+
+
+
+
+
+

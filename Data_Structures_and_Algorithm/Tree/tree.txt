@@ -1,0 +1,35 @@
+1. Introduction
+
+* Non Linear Data structure.
+* Used to represent hierarchy.--> file folder, organisaton.
+* Quickier access as it is non linear data structure.
+* Node -> Contains data and pointers to childs.
+* External Nodes -> Leaf nodes --> That do not have child.
+* Internal Nodes -> That has atleast one child.Degree not zero.
+* Height of Node -> Larget No of edges from that node to leaf Node.
+* Depth of Node -> No edges from that node to the root node.
+* Deepest Node -> The node which has largest distance from root node.
+* Height of a tree -> Height of a root node or depth of deepest Node.
+* Degree of a node -> No of branches from that node.
+* Forest -> Disjoint Trees made by cutting edges of root node.
+* Heap is a kind of a tree.
+
+2. Traversal
+
+* Inorder, preorder, postOrder
+* Inorder -> print left subtree first, then root node, then right node.
+* preorder -> print root first, then left, then right subtree. pre means first comes. and root comes first.
+* postorder -> root last. first left, then right, then root.
+
+3. Application
+
+* To represent hierarchial data structure.
+* Folder structure.
+* HTML tags.
+* Binary search Trees.
+* B and B+ trees in DBMS. used for indexing.
+* Trie -- used in dictionary.
+* suffix tree -- used to search patterns in strings.
+
+
+* Binary Tree -- every node has at most two children.
