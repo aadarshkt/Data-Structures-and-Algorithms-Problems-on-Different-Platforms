@@ -1,0 +1,47 @@
+1. Time complexity(balanced)
+
+* Search, insert, delete, find closest -> O(logN)
+* Sorted traversal -> O(n)
+* Search, insert, delete best is Hash Table. O(1) find closest -> O(n). sorted traversal -> O(nlogn)
+* but when find closest or sorted traversal use BST
+* You can simply say time complexity is O(h)
+
+2. Applications.
+
+* Find closest, greater, smaller.
+* Inorder Traversal gives sorted order.
+
+3. Features.
+
+* All left nodes are smaller and all right nodes are greater. This is true for all nodes in the BST.
+* Like linked List.
+* Not cache friendly
+* used by multiset, multimap, map, set.
+
+4. Self Balancing BST
+
+* BST with minimum height.
+* Types -> AVL tree, Red black Tree.
+* Balance Factor of a node -> difference between height of right subtree and left subtree.
+* for avl tree -> Balance Factor <= 1
+
+5. Red Black Tree.
+
+* Every node is either Red or black tree.
+* root is always black.
+* no consecutive red.
+* Number of black nodes from root to leaves should be same.
+* we can have atmost twice the number of nodes as compared to one subtree. If Left subtree has 3 nodes then right subtree will have max 6 nodes.
+* set and map in C++ stl uses Red black tree.
+* Time complexity of insert, find, erase(val) is thus logn for map and set
+* erase(it) is amortised O(1)
+
+6. Applications of Self balancing BST.
+
+* To maintain sorted stream of data.
+* To implement doubly ended priority queue. max and minimum both can be answered using O(1).
+
+7. Application of C++ stl set
+
+* maintain sorted stream of data.
+* doubly ended priority queue
