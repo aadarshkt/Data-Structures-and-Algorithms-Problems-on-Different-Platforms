@@ -50,6 +50,8 @@ int main()
         cin >> sh[i];
     }
 
+    cout << endl;
+
     cout << minCost(n - 1, sh) << endl;
 
     return 0;

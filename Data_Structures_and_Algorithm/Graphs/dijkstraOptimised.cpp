@@ -8,6 +8,17 @@ using namespace std;
 
 //Priority queues are built on the top to the max heap
 
+//Dijkstra in one line --> DO BFS with priority queue and relax all the adjacent.
+
+//Since you are using priority queue only the node with least distance currently now will be used to relax other neighbours.
+
+//How dijkstra works.
+
+//Relax all the neighbours of starting node.
+//Go to shortest distant node wrt to starting node.
+//Now relax all the neighbours.
+//Go to shortest distant node wrt to second node.
+
 void addEdge(vector<pair<int, int>> adj[], int u, int v, int w)
 {
     pair<int, int> p;

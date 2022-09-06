@@ -10,6 +10,10 @@ void printAllSubsequence(string input, string output)
         return;
     }
 
+    cout<<endl;
+
+    cout << endl;
+
     ///You have two options either you pick or kick // Keep doing this and you will find many subsequence.(2^n);
     
     printAllSubsequence(input.substr(1), output + input[0]); //Pick
