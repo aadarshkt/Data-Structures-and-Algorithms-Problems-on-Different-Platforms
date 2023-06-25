@@ -1,97 +1,82 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void addEdges(vector<int> adj[], int u, int v)
-{
-    adj[u].push_back(v);
+#ifdef LOCAL
+#include <bits/dbg.h>
+#else
+#define dbg(...) 42
+#endif
+
+#define int long long
+
+bool dfs(vector<vector<int>> &adj,vector<int> &vis,vector<int> &rec,int s,vector<int> &top){
+    vis[s]=1;
+    rec[s]=1;
+    int ans=0;
+    for(auto i:adj[s]){
+        if(rec[i])ans=1;
+        if(!vis[i]){
+            ans|=dfs(adj,vis,rec,i,top);
+        }
+    }
+    top.push_back(s);
+    rec[s]=0;
+    return ans;
 }
 
-void longestPath(vector<int> adj[], int s, int dist[], int parent[])
-{
-    queue<int> q;
-
-    q.push(s);
-
-    int u;
-
-    while (q.empty() == false)
-    {
-        u = q.front();
-        q.pop();
-
-        for (int i = 0; i < adj[u].size(); i++)
-        {
-            if (dist[adj[u][i]] < dist[u] + 1)
-            {
-                dist[adj[u][i]] = dist[u] + 1;
-                parent[adj[u][i]] = u;
-            }
-
-            // since it is directed we don't have to think of the visited part.
-            q.push(adj[u][i]);
+void relax(vector<vector<int>> &adj,vector<int> &parent,vector<int> &dp,int s){
+    for(auto i:adj[s]){
+        if(dp[i]<dp[s]+1){
+            dp[i]=dp[s]+1;
+            parent[i]=s;
         }
     }
 }
 
-int main()
+int32_t main()
 {
-    ios_base::sync_with_stdio(false);
+    ios::sync_with_stdio(false);
     cin.tie(NULL);
-    cout.tie(NULL);
 
-    int n, m;
-    cin >> n >> m;
-
-    vector<int> adj[n + 1];
-
-    while (m--)
-    {
-        int a, b;
-        cin >> a >> b;
-
-        addEdges(adj, a, b);
+    int n,m;cin>>n>>m;
+    vector<vector<int>> adj(n+1);
+    vector<int> vis(n+1,0),parent(n+1,-1),rec(n+1,0),top,dp(n+1,INT_MIN);
+    dp[1]=0;
+    for(int i=0;i<m;i++){
+        int u,v;cin>>u>>v;
+        adj[u].push_back(v);
     }
-
-    int dist[n + 1], parent[n + 1];
-
-    vector<int> trace;
-
-    for (int i = 1; i < n + 1; i++)
-    {
-        dist[i] = INT_MIN;
-        parent[i] = -1;
+    int pos=0;
+    for(int i=1;i<=n;i++){
+        if(!vis[i]){
+            pos=dfs(adj,vis,rec,i,top);
+            if(pos)break;
+        }
     }
-
-    dist[1] = 0;
-
-    longestPath(adj, 1, dist, parent);
-
-    int index = n;
-
-    while (index != -1)
-    {
-        trace.push_back(index);
-        index = parent[index];
-    }
-
-    reverse(trace.begin(), trace.end());
-
-    if (trace[0] != 1)
-    {
-        cout << "IMPOSSIBLE" << endl;
+    dbg(pos);
+    if(pos){
+        cout<<"IMPOSSIBLE"<<'\n';
         return 0;
     }
-
-    int size = trace.size();
-
-    cout << size << endl;
-
-    for (int i = 0; i < size; i++)
-    {
-        cout << trace[i] << " ";
+    reverse(begin(top),end(top));
+    for(auto x:top){
+        if(dp[x]==INT_MIN)continue;
+        relax(adj,parent,dp,x);
     }
-
-    cout << endl;
+    if(dp[n]==INT_MIN){
+        cout<<"IMPOSSIBLE"<<'\n';
+        return 0;
+    }
+    vector<int> ans;
+    ans.push_back(n);
+    int s=parent[n];
+    while(s!=-1){
+        ans.push_back(s);
+        s=parent[s];
+    }
+    reverse(begin(ans),end(ans));
+    cout<<(int)ans.size()<<"\n";
+    for(auto x:ans)cout<<x<<' ';
 
     return 0;
 }

@@ -1,84 +1,49 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void addEdge(vector<pair<long long, long long>> adj[], long long u, long long v, long long w)
-{
-    pair<long long, long long> p;
-    p.first = v;
-    p.second = w;
-    adj[u].push_back(p);
-}
+#ifdef LOCAL
+#include <bits/dbg.h>
+#else
+#define dbg(...) 42
+#endif
 
-void dijkstra(vector<pair<long long, long long>> adj[], long long s, long long dist[], bool sptSet[], long long v)
-{
-    // min priority queue to make distance minimum at first.
-    priority_queue<pair<long long, long long>, vector<pair<long long, long long>>, greater<pair<long long, long long>>> pq;
+#define int long long
 
-    pair<long long, long long> p(1, 0);
-
-    pq.push(p);
-
-    long long u;
-
-    while (pq.empty() == false)
-    {
-        u = pq.top().first;
+void build(vector<vector<pair<int,int>>> &adj,vector<int> &dis){
+    priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>> pq;
+    pq.push({0,1});
+    while(!pq.empty()){
+        pair<int,int> fr=pq.top();
+        int d=fr.first;
+        int u=fr.second;
         pq.pop();
-
-        sptSet[u] = true;
-
-        for (long long i = 0; i < adj[u].size(); i++)
-        {
-            long long v = adj[u][i].first;
-            long long w = adj[u][i].second;
-
-            if (sptSet[v] == false && dist[v] > dist[u] + w)
-            {
-                dist[v] = dist[u] + w;
-                p.first = v;
-                p.second = w;
-                pq.push(p);
+        if(d!=dis[u])continue;
+        for(auto i:adj[u]){
+            int v=i.first,w=i.second;
+            if(dis[v]>dis[u]+w){
+                dis[v]=dis[u]+w;
+                pq.push({dis[v],v});
             }
         }
     }
 }
 
-int main()
+int32_t main()
 {
-    ios_base::sync_with_stdio(false);
+    ios::sync_with_stdio(false);
     cin.tie(NULL);
-    cout.tie(NULL);
 
-    long long n, m;
-    cin >> n >> m;
-
-    long long a, b, c;
-
-    vector<pair<long long, long long>> adj[n + 1];
-
-    while (m--)
-    {
-        cin >> a >> b >> c;
-        addEdge(adj, a, b, c);
+    int n,m;cin>>n>>m;
+    vector<vector<pair<int,int>>> adj(n+1);
+    for(int i=0;i<m;i++){
+        int u,v,w;cin>>u>>v>>w;
+        adj[u].push_back({v,w});
     }
-
-    long long dist[n + 1];
-    bool sptSet[n + 1];
-
-    for (long long i = 1; i < n + 1; i++)
-    {
-        dist[i] = LLONG_MAX;
-        sptSet[i] = false;
-    }
-
-    dist[1] = 0;
-
-    dijkstra(adj, 1, dist, sptSet, n);
-
-    for (long long i = 1; i < n + 1; i++)
-        cout << dist[i] << " ";
-
-    cout << endl;
+    vector<int> dis(n+1,1e18);
+    dis[1]=0;
+    build(adj,dis);
+    for(int i=1;i<=n;i++)cout<<dis[i]<<' ';
+    cout<<'\n';
 
     return 0;
 }
