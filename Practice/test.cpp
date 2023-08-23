@@ -30,9 +30,9 @@ int32_t main()
     ios::sync_with_stdio(false);
     cin.tie(NULL);
 
-    int a=2,b=4;
-    int c=a xor b;
-    cout<<c<<'\n';
+    string s="00001230";
+    int a=stoi(s);
+    cout<<a<<'\n';
 
     return 0;
 }
