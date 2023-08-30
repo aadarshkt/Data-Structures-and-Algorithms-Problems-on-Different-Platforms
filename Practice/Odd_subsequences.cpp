@@ -9,11 +9,22 @@ using namespace std;
 
 #define int long long
 
+const int mod=1e9+7;
+
 // int i --> number of elements processed.
 // int len --> length of subsequence.
 // int sum --> sum of subsequence.
 
-
+int solve(vector<int> &a,int sum,int i,int n,int len,int k){
+    if(i==n){
+        if(len==k&&sum%2!=0)return 1;
+        else return 0;
+    }
+    int ans=0;
+    ans+=solve(a,sum+a[i],i+1,n,len+1,k);
+    ans+=solve(a,sum,i+1,n,len,k);
+    return ans;
+}
 
 int32_t main()
 {
