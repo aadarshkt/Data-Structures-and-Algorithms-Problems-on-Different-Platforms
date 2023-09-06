@@ -25,14 +25,14 @@ bool check(int x,int k){
     return 0;
 }
 
+const int mod=1e9+7;
+
 int32_t main()
 {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
 
-    string s="00001230";
-    int a=stoi(s);
-    cout<<a<<'\n';
+    cout<<(57885954-352586971)+mod<<'\n';
 
     return 0;
 }
