@@ -23,33 +23,34 @@ int32_t main()
     ios::sync_with_stdio(false);
     cin.tie(NULL);
 
-    int n;cin>>n;
-    vector<vector<int>> adj(n+1);
+    int n,q;cin>>n>>q;
+    vector<int> par(n+1,-1);
     for(int i=0;i<n-1;i++){
-        int u,v;cin>>u>>v;
-        adj[u].push_back(v);
-        adj[v].push_back(u);
+        int p;cin>>p;
+        par[i+2]=p;
     }
     int mxJump=ceil(log2(n-1));
-    vector<vector<int>> dp(n+1,vector<int>(mxJump+1,0));
-    vector<int> vis(n+1,0),par(n+1,-1);
-    dfs(adj,vis,par,1);
+    vector<vector<int>> dp(n+1,vector<int>(mxJump+1,-1));
     for(int i=1;i<=n;i++){
         dp[i][0]=par[i];
     }
     for(int j=1;j<=mxJump;j++){
         for(int i=1;i<=n;i++){
-            if(dp[i][j-1]!=-1&&dp[dp[i][j-1]][j-1]!=-1){
+            if(dp[i][j-1]!=-1&&dp[dp[i][j-1]][j-1]!=-1)
                 dp[i][j]=dp[dp[i][j-1]][j-1];
-            }else dp[i][j]=-1;
         }
     }
-    int q;cin>>q;
+    dbg(par,dp);
     for(int i=0;i<q;i++){
-        int u,jump;cin>>u>>jump;
-        int curr=u;
-        for(int j=0;j<=32;j++){
-            if(jump&(1<<j)){
+        int x,k;cin>>x>>k;
+        int curr=x;
+        if(k>(1<<mxJump)){
+            cout<<-1<<'\n';
+            continue;
+        }
+        for(int j=0;(1<<j)<=k;j++){
+            if(k&(1<<j)){
+                dbg(i,curr,j);
                 curr=dp[curr][j];
             }
             if(curr==-1)break;
