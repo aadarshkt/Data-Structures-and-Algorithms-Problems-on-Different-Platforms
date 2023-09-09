@@ -42,9 +42,6 @@ int32_t main()
         if(loopStart!=-1)continue;
         if(!vis[i])detectCyc(adj,i,vis,rec,parent,loopStart);
     }
-    // dbg(loopStart);
-    // for(auto x:parent)cout<<x<<' ';
-    // cout<<'\n';
     if(loopStart==-1){
         cout<<"IMPOSSIBLE"<<'\n';
         return 0;

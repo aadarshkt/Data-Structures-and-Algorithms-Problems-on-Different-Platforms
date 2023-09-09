@@ -11,30 +11,10 @@ using namespace std;
 
 void bfs(vector<vector<int>> &adj,vector<int> &vis,int s,vector<int> &lev){
     vis[s]=1;
-    queue<int> q;
-    q.push(s);
-    q.push(-1);
-    int level=0;
-    while(!q.empty()){
-        int fr=q.front();
-        if(fr==-1){
-            while(!q.empty())q.pop();
-            continue;
-        }
-        q.pop();
-        lev[fr]=level;
-        if(q.front()==-1){
-            q.pop();
-            level++;
-        }
-        int fl=0;
-        for(auto i:adj[fr]){
-            if(vis[i])continue;
-            vis[i]=1;
-            q.push(i);
-            fl=1;
-        }
-        if(fl)q.push(-1);
+    for(auto i:adj[s]){
+        if(vis[i])continue;
+        lev[i]=lev[s]+1;
+        bfs(adj,vis,i,lev);
     }
 }
 

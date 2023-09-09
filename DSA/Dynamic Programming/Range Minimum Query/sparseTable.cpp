@@ -18,7 +18,8 @@ int32_t main()
     vector<int> a(n);
     for(auto &x:a)cin>>x;
     //dp[i][j] --> minimum of interval starting at index i and having length 1<<j;
-    vector<vector<int>> dp(n,vector<int>(ceil(log2(n))+1,0));
+    int mxPow=ceil(log2(n));//mx power of 2 that is less than or equal to len
+    vector<vector<int>> dp(n,vector<int>(mxPow+1,0));
     for(int i=0;i<n;i++){
         dp[i][0]=a[i];
     }
