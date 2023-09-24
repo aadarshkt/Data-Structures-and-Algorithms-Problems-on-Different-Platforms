@@ -1,0 +1,1 @@
+{"name":"Local: d","url":"/Users/aadarshkt/Desktop/Code/Practice/d.cpp","tests":[{"id":1694617992947,"input":"8\n2\n6\n4\n5\n9\n6\n11\n100","output":"-1\n3 4 1 2\n4 5 1 2 3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/aadarshkt/Desktop/Code/Practice/d.cpp","group":"local","local":true}
