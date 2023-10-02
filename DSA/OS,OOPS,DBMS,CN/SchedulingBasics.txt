@@ -59,6 +59,18 @@ Disadvantages - Starvation.
 7. Longest Remaining Time First - Preemptive version of LJF.
 
 8. Highest Response Ratio Next - 
+   . Most optimal CPU scheduling algorithm
+   . Response ratio is considered for selecting priority.
+   . Highest response ratio, execute that process first.
+   . Response ratio - ( w + s ) / s, w is waiting time so far, s is the burst time for the the process.
+   . If a process has more waiting time so far so it will have high response ratio, thus will be treated first.
+   . Once a process is selected it will be executed completely.
+   . So it is a non-preemptive process.
+   . Starvation problem solved as if a process is starving it will have high waiting time so far thus response ratio will increase.
+   . Disadvantage of SJF solved as long burst time process will also be taken.
+
+Disadvantages - 1. Burst time is not known sometimes beforehand.
+
 
 
 
