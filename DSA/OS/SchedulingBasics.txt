@@ -1,0 +1,67 @@
+1. Scheduling - alot cpu time for computer processes. Giving priority to tasks.
+2. Done by operating to give priority to tasks and Schedule them to make efficient use of computer resources.
+3. Benefits - every process gets fair chance, long running task are kept in background sometimes so that short-running task are completed, so that number of processes that are pending becomes low.
+4. Process - a computer program that is running on computer.
+5. What is OS scheduling, allocating processes or programs CPU time.
+6. When cpu stops one program, restarts another it is called context switching.
+
+Time. 
+1. Arrival time - time at which a process arrives in ready queue.
+2. Completion time - time at which a process completed it's execution.
+3. Burst time - time required by process for its execution.
+4. Turn around time - difference between arrival time and completion time.
+5. Waiting time - difference between burst time and turn around time.
+
+Small definitions.
+1. Throughput of a cpu - number of processes completed per unit time. 
+   for ex - 5 processes completed in 2s. Throughput is 2.5
+2. Response time - The input may be long and many fold. So Time taken between issuing a process and finally getting the first response is called Response time.
+
+
+You can imagine it to be like toll tax. 
+1. difference between arrival time and completion time would be turnaround time. For this you were engaged with toll tax process.
+2. Actual toll taking time -- burst time.
+3. Simply difference of these two will give you wait time. 
+4. Ex - turn around time was 5s, burst time 2s, waiting time 3s.
+
+Types of Scheduling algorithms
+1. Preemptive Scheduling - preemptive meaning - taking action rightaway on the basis of future happenings, To step in between and take control. in these algorithms, CPU can stop some processess foreseeing any future demand. Like if
+   a process is taking long time stop it as UI is getting blocked.
+2. Nonpreemptive scheduling.
+
+Different Scheduling Algorithms.
+1. FCFS - First come first serve
+Advantages - 1. Easy to implement
+Disadvantages - 1. Convoy effect - if one takes time other suffers.
+
+2. SJF - Shortest Job First - Do job first that has smallest burst time.
+Advantages - 1. Reduces waiting time of short processes. 2. Most efficient algorithm to reduce average waiting time.
+Disadvantages - 1. Starvation for long processes if short processes keep coming. 2. Sometimes complicated to predict completion time of processes.
+
+3. LJF - Longest job first - Do job first that has longest burst time.
+Advantages - 1. No other task can be finished untill longest job is finished first. 
+Disadvantages - 1. Largest average waiting time. 2. Convoy effect.
+
+4. Priority Scheduling - Priority of task is set through editor any method, excecuted according to that. If two processes have same priority, then apply fcfs.
+Advantages - high priority tasks are completed first, even if low priority was running preemptive action is taken(step in between and take control), to stop it and execute the high priority task.
+Disadvantages - Starvation problem - low priority tasks are completely starved if high priority tasks keep coming, even if other has short execution time.
+
+Preemptive - meaning u can understand, if CPU stops one to start other, it is called preemptive.
+
+5. Round Robin - Move in cycles to execute processes, based on fcfs, definitely preemptive.
+Advantages - 1. Starvation free. 2. Seems fair as every process is given some time.
+
+6. Shortest Remaining Time First -  It is like shortest job first, but shortest remaining time is calculated instead of total time of execution time. For example if some process is has shorter remaining time, finish it first. Execution time is dynamic, SJF is treated if processes have fixed execution time. 
+   . More preemptive in nature, thus more context switching.
+Advantages - short processes handled very fast. superior to SJF.
+Disadvantages - Starvation.
+
+7. Longest Remaining Time First - Preemptive version of LJF.
+
+8. Highest Response Ratio Next - 
+
+
+
+
+
+

@@ -1,0 +1,1 @@
+{"name":"Local: SCCbrute","url":"/Users/aadarshkt/Desktop/Code/DSA/Graphs/usaco/SCC/SCCbrute.cpp","tests":[{"id":1696184707038,"input":"7 10\n1 2\n2 4\n2 3\n3 4\n4 1\n4 5\n3 6\n5 6\n6 7\n7 5","output":"1 2 3 4\n5 6 7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/aadarshkt/Desktop/Code/DSA/Graphs/usaco/SCC/SCCbrute.cpp","group":"local","local":true}

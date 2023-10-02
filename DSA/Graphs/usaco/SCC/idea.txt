@@ -1,0 +1,37 @@
+1. In a strongly connected component, there is path from every vertex to every other vertex. Same statement - there is a path between every pair of vertices.
+2. To find it go from every vertex to every other vertex, and find that whether or not there is a path from that vertex to original vertex.
+3. For example for vertex 1 go to 2, if there is path from 1 to 2 and 2 to 1, they are in same SCC.
+4. go from 1 to 3 and 3 to 1, then 1 2 3 are in same SCC.
+5. for vertex 5 you find that you can go from 1 to 5 but not from 5 to 1, then 5 and 1 will not be in same SCC.
+6. You don't have to check for 2 3 
+7. going to 4 do same thing like 1.
+
+Another defintion(Kosaraju's Algo)
+1. From one vertex you can go from to every other vertex, and from each vertex you can come to that original vertex then it is SCC.
+
+Important Observation
+1. If for one vertex you find it's SCC, means all vertex it can reach and from them one can reach that one vertext --> all brute force on this statement.
+2. Then all other vertices, has it's SCC defined.
+3. For example for 1 you find that it's SCC is 1 2 3, means you can go from 1 to 2 and 3 and from 2 and 3 you can come to 1, THUS YOU CAN ALL PAIR OF VERTICES IN 1 2 3 ARE STRONGLY CONNECTED.
+4. Thus 2 cannot have any other SCC other than 1 2 3, if it were, then you would have calculated it with one.
+5. Thus due to above reasoning we maintain a vector isSCC to mark which vertices all already in a SCC so that you don't have to calculate it again.
+6. Thus if in a SCC don't calculate SCC for it.
+
+Above 3rd point reasoning is explained as follows
+1. For example, from 1 you can go to 2 and come back, from 1 you can go to 3 and come back, from 1 you can go to 4 and come back.
+2. Thus you can obviously go from 2 to 3 and come back, through 1.
+3. Thus to find all pairs in a SCC are connected or not it is sufficent to find that from one vertex you can reach every other vertex and come back.
+
+Kosaraju algo is related to 3rd point
+1. It is easy to find that one vertex you can go to all vertext or not. Do simple DFS and count vertices reached.
+2. To calculate whether or not you can reach from every vertex to 1 or not, you have to reverse all edges. and do DFS from 1.
+3. Take example that there is edge from 3 to 1, in reverse graph there will be edge from 1 to 3, thus you can do DFS.
+
+Brute Force. O(V3)
+1. One simple statement - From one vertex y you can reach to x vertices, and from all those x vertices you can reach y, then y vertex and all those x vertices from one SCC.
+
+Only two things.
+3Rd point
+SCC - for all pairs of vertices in a SCC, you can go from a to b and b to a.
+
+
