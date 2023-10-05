@@ -1,0 +1,11 @@
+1. Back edge - a node that is visited in curr DFS tree(made using rec[i], topsort) such that it is not the parent of curr node.
+
+    if(i!=par[s]&&vis[i]){
+        //then i is the back edge.
+    }
+
+2. More simpler definition - 
+3. Bridge - a edge which when broken divides the graph into two or more components.
+   and How to find it?
+   1. A edge is a bride if and only if there isn't a node below it which can connect it to above.
+   2. 
