@@ -14,9 +14,19 @@ int32_t main()
     ios::sync_with_stdio(false);
     cin.tie(NULL);
 
-    string s="1110";
-    bitset<32> d(s);
-    cout<<(d<<1)<<'\n';
+    time_t curr_time=time(0) + 3600;
+    
+    cout<<curr_time<<"\n";
+
+    string s = ctime(&curr_time);
+
+    cout<<s<<'\n';
+
+    srand(time(0));
+
+    int random_number = rand() % 100 + 1;
+
+    cout<<random_number<<'\n';
 
     return 0;
 }

@@ -9,3 +9,6 @@
    and How to find it?
    1. A edge is a bride if and only if there isn't a node below it which can connect it to above.
    2. 
+
+4. Cross edge, if you visit any visited node and it is not in curr dfs stack so that edge is cross edge.
+5. Back edge - if you visite any visited node and it is in curr dfs stack, that edge is called back edge, it may form a cycle.

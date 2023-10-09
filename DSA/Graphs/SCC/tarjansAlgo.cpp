@@ -14,9 +14,7 @@ int32_t main()
     ios::sync_with_stdio(false);
     cin.tie(NULL);
 
-    string str="abc";
-    str.erase(str.begin()+1);
-    cout<<str<<"\n";
+    cout<<"could'nt understand it"<<'\n';
 
     return 0;
 }

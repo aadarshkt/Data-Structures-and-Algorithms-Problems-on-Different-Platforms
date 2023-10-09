@@ -14,7 +14,9 @@ int32_t main()
     ios::sync_with_stdio(false);
     cin.tie(NULL);
 
-    cout<<ceil(log2(15))<<'\n';
+    time_t curr_time = time(0) - 3600;
+    string s = ctime(&curr_time);
+    cout<<s<<'\n';
 
     return 0;
 }

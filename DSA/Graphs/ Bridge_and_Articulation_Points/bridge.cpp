@@ -54,6 +54,7 @@ int32_t main()
         if(!vis[i])dfs(i);
     }
     //second way
+    //but multiple caculation
     for(int i=1;i<=n;i++){
         for(int x:adj[i]){
             if(dp[x]>dp[i]){

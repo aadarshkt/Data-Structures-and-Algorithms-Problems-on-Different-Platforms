@@ -12,7 +12,7 @@ public :
     }
     void adjustCost(int n[7], int m) {
         for (int i = 0; i < 7; i++) {
-            if (n[i] != 100 && (temp[i] == 100 || temp[i] > n[i] + temp[m])) {
+            if (n[i] != 100 && (temp[i] > n[i] + temp[m])) {
                 temp[i] = n[i] + temp[m]; 
             }
         }
