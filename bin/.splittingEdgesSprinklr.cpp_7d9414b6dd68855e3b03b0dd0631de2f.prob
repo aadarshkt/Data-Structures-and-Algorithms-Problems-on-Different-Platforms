@@ -1,0 +1,1 @@
+{"name":"Local: splittingEdgesSprinklr","url":"/Users/aadarshkt/Desktop/Code/Practice/splittingEdgesSprinklr.cpp","tests":[{"id":1697024444919,"input":"1\n4\n1 3 3 2\n2 1\n3 1\n4 1","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/aadarshkt/Desktop/Code/Practice/splittingEdgesSprinklr.cpp","group":"local","local":true}

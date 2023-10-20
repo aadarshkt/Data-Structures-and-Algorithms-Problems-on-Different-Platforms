@@ -1,0 +1,49 @@
+1. What is OS? It is a computer program that manages computer hardware and software, to run them efficiently.
+2. Main task of OS? execute programs on behalf of user through interface.
+3. Redundant arrays of Independent Disks.(Raid) -> ways in which different array members(disks) combine to provide data.
+4. How can you do raid? one can either copy data(disk mirroring) or (disk striping)
+5. What are the parameters which help determine which type of raid is better?
+   . Fault-tolerance - If for example one disk fail. What is the level of redundancy that will help to provide. 
+   . Performance - read and write speed should be high.
+   . Capacity - available Capacity to store should be high.
+
+6. Virtual Memory - It is an extension of Physical RAM on disk that can be used as RAM for applcations that require more resources.
+7. Thread in OS - A big task can be broken into multiple small tasks. Those small tasks can be independently done by many threads. A thread is the smallest unit of execution in OS. 
+   . What constitues a thread - thread ID, program counter, stack, registers.
+
+8. What is the diffrence between program and process?
+   . Program is any executible file stored in memory.
+   . When a program is loaded to RAM for execution it is called process.
+
+9. States of a process.
+   . New State - when a program is loaded to memory it is called new state.
+   . Ready state - when a process is ready with all resources and information for it to run on CPU.
+   . Running State - when instructions inside a process is currently being run by CPU.
+   . Waiting State - when a process's execution is currently being stopped due to any reason either it waiting for another process to complete or waiting for any other information.
+   . Terminated State - a process when completed is called terminated state/ or its execution is stopped by OS.
+
+10. Definition of preemptive - take control and take action is called preemptive. Preemptive strike by military.
+
+11. Difference between paging and segmentation - Dividing programs memory into fixed sized blocks is called paging and Segmentation is logical partitioning of program's memory into data, code and stack;
+
+12. Thrashing in OS - it is a situation in OS where CPU spends more of it's time in loading progams to memory rather than actual instruction execution.
+    . It happens when too much processes are active and user is switching between it.
+
+13. Multiprogramming - Paradigm of processing when multiple programs are running on CPU, it is more related to programs. Multiple programs that are running on CPU.
+
+14. Multiprocessing - Multiple processors doing different part of program to execute it efficiently.
+
+15. Multitasking - Different tasks running on single processor to improve efficiency, it is more related to user - experience, user is performing multiple tasks at once. listening to songs, writing on text editor, downloading files.
+    . Time sharing technique is used.
+    . CPU jumps between different processes very fast such that it seems that all processes are running simultaneously.
+    . This jumping between tasks is called context switching.
+
+16. Zombie process - a process that has completed it's execution and terminated but it is present in process table. Process table is table that contains information about which process are about to be executed.
+
+17. Kernel - It is a computer program, that interacts with hardware and lies between hardware and OS. It is first thing that is loaded when computer turns on.
+    . It interacts with Disks, CPU, RAM, drivers, peripherals,
+
+18. Components of process - 1. Compiled code 2. Data 3. Heap for dynamic memory allocation 4. Stack for recursion stack.
+
+19. Spooling in OS - 1. Simultaneous peripherals operations online - It is defined as putting various jobs of I/O to memory.
+
