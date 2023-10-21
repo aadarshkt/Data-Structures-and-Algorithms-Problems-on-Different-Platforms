@@ -36,10 +36,11 @@ void insert(TrieNode* root, string key){
     int n=key.length();
 
     for(int i=0;i<n;i++){
-        if(!pCrawl->child[i]){
-            pCrawl->child[i] = new TrieNode();
+        int index = key[i] - 'a';
+        if(!pCrawl->child[index]){
+            pCrawl->child[index] = new TrieNode();
         }
-        pCrawl=pCrawl->child[i];
+        pCrawl=pCrawl->child[index];
     }
     pCrawl->isEndOfWord=true;
 }
@@ -48,11 +49,14 @@ bool search(TrieNode* root, string key){
     if(root == NULL)return false;
     int n=key.length();
     TrieNode* pCrawl = root;
+    //pCrawl is pointer to a struct
+    //arrow is used to get members of struct from it pointer.
     for(int i=0;i<n;i++){
-        if(!pCrawl->child[i]){
+        int index = key[i] - 'a';
+        if(!pCrawl->child[index]){
             return false;
         }
-        pCrawl = pCrawl->child[i];
+        pCrawl = pCrawl->child[index];
     }
     return pCrawl->isEndOfWord;
 }
@@ -73,7 +77,7 @@ int32_t main()
         insert(root,dictionary[i]);
     }
 
-    vector<string> query = {"the", "therire", "byee", "theirq"};
+    vector<string> query = {"the", "therire", "byee", "their"};
 
     for(int i=0;i<(int)query.size();i++){
         cout<<search(root,query[i])<<'\n';
