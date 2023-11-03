@@ -4,18 +4,44 @@
 4. Process - a computer program that is running on computer.
 5. What is OS scheduling, allocating processes or programs CPU time.
 6. When cpu stops one program, restarts another it is called context switching.
+7. Scheduling algorithms are the algorithms that determine the order in which processes will be selected to be executed on the CPU.
+8. Preemptive action - to take action on basis of future assumption. A CPU may stop a process when it requires to do so seeing the future requirements.
+9. Nonpreemptive - CPU will not stop a process if even if required to do so seeing the future requirements.
+10. Preemptive Scheduling algorithms - A cpu can put process from running state to ready state.
+11. Nonpreemptive Scheduling Algorithms - A cpu cannot put process from running state to ready state. A process when put to running state takes complete burst time.
+12. Example of preemptive scheduling algorithms - 
+    1. Shortest remaining time first 
+    2. Longest remaining time first;
+    3. Round Robin
+    4. Priority first
+13. Example of Nonpreemptive scheduling Algorithms
+    1. FCFS
+    2. SJF 
+    3. LJF
+    4. Highest response ratio Next
+    5. Multilevel Queue
 
 Time. 
 1. Arrival time - time at which a process arrives in ready queue.
 2. Completion time - time at which a process completed it's execution.
-3. Burst time - time required by process for its execution.
+3. Burst time - time duration required by process for its execution.
 4. Turn around time - difference between arrival time and completion time.
 5. Waiting time - difference between burst time and turn around time.
+6. Response time - the time duration in which a process get cpu for the first time after arrival time.
+
+3 formulas
+TAT = CT - AT
+WT = TAT - BT
+RT = FIRST INSTANT at which process started on CPU - AT
+
+
 
 Small definitions.
 1. Throughput of a cpu - number of processes completed per unit time. 
    for ex - 5 processes completed in 2s. Throughput is 2.5
 2. Response time - The input may be long and many fold. So Time taken between issuing a process and finally getting the first response is called Response time.
+3. Time quantum - time that cpu allotes to each process and constantly shifts between them.
+4. Context switching - When current process is saved and CPU moves on to process next process it is called context switching.
 
 
 You can imagine it to be like toll tax. 
@@ -34,7 +60,8 @@ Different Scheduling Algorithms.
 Advantages - 1. Easy to implement
 Disadvantages - 1. Convoy effect - if one takes time other suffers.
 
-2. SJF - Shortest Job First - Do job first that has smallest burst time.
+2. SJF - Shortest Job First - Do job first that has smallest burst time, do it completely as it is non-preemptive 
+Important point - first check which processess have arrived, if multiple processes are in ready queue choose with lowest burst time.
 Advantages - 1. Reduces waiting time of short processes. 2. Most efficient algorithm to reduce average waiting time.
 Disadvantages - 1. Starvation for long processes if short processes keep coming. 2. Sometimes complicated to predict completion time of processes.
 
@@ -48,10 +75,10 @@ Disadvantages - Starvation problem - low priority tasks are completely starved i
 
 Preemptive - meaning u can understand, if CPU stops one to start other, it is called preemptive.
 
-5. Round Robin - Move in cycles to execute processes, based on fcfs, definitely preemptive.
+5. Round Robin - Execute a process for fixed time quantum and then do context switching for next processess according to ready queue. if a process is incomplete then move to the end of queue.
 Advantages - 1. Starvation free. 2. Seems fair as every process is given some time.
 
-6. Shortest Remaining Time First -  It is like shortest job first, but shortest remaining time is calculated instead of total time of execution time. For example if some process is has shorter remaining time, finish it first. Execution time is dynamic, SJF is treated if processes have fixed execution time. 
+6. Shortest Remaining Time First -  It is like shortest job first, but shortest remaining time is calculated instead of total time of execution time. For example if some process is has shorter remaining time, finish it first.
    . More preemptive in nature, thus more context switching.
 Advantages - short processes handled very fast. superior to SJF.
 Disadvantages - Starvation.
@@ -70,6 +97,18 @@ Disadvantages - Starvation.
    . Disadvantage of SJF solved as long burst time process will also be taken.
 
 Disadvantages - 1. Burst time is not known sometimes beforehand.
+
+Multilevel Queue Scheduling
+Different queue for different types of processes instead of one ready queue.
+1. System processes - interrupt, ram management. 
+2. Interactive processes - video, audio, application interactivity
+3. Batch processes - downloading etc
+
+Problem - starvation as system will keep getting processed due to high priority.
+
+Multilevel Feedback queue - maintain different queue for different priority levels and keep moving lower priority processes to higher priority levels.
+
+
 
 
 
