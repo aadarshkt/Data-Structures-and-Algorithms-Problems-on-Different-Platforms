@@ -6,6 +6,10 @@ struct Node{
     int data;
     Node* next;
 
+    void set(int x){
+        this->data = x;
+    }
+
     Node(int x)
     {
         data = x;
