@@ -16,7 +16,7 @@ void merge(vector<int> &arr,int l,int m,int r){
     for(int p=m+1;p<=r;p++){
         right[p-m-1]=arr[p];
     }
-    while(k<=r){
+    while(i<n1&&j<n2){
         if(left[i]<=right[i]){
             arr[k]=left[i];
             i++;
@@ -26,9 +26,20 @@ void merge(vector<int> &arr,int l,int m,int r){
         }
         k++;
     }
+
+    while(i<n1){
+        arr[k] = left[i];
+        k++;i++;
+    }
+    while(j<n2){
+        arr[k] = right[j];
+        k++;
+        j++;
+    }
 }
 
 void mergeSort(vector<int> &arr,int l,int r){
+    if(l>=r)return;
     int m = l + (r - l)/2;
     mergeSort(arr,l,m);
     mergeSort(arr,m+1,r);
