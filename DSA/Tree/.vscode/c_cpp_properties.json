@@ -11,7 +11,7 @@
                 "_UNICODE"
             ],
             "windowsSdkVersion": "10.0.19041.0",
-            "compilerPath": "D:/MinGW/bin/g++.exe",
+            "compilerPath": "/opt/homebrew/bin/g++-13",
             "cStandard": "c17",
             "cppStandard": "c++17"
         }
