@@ -1,13 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#ifdef LOCAL
-#include <bits/dbg.h>
-#else
-#define dbg(...) 42
-#endif
-
-#define int long long
 
 int32_t main()
 {
@@ -33,6 +26,23 @@ int32_t main()
     //1. &b = a then b's address and b's value both become a's address
     //changin b's value changes a's values
     //2. *c = a, then a new variable c stores just only address of c
+
+    //To test -> the references cannot be reassigned means it cannot made to alias different variable  but pointers can be reassigned.
+
+    int* d = &a;
+    cout<<"value of d is "<<*d<<'\n';
+    cout<<"address of d is "<<d<<'\n';
+    int e = 12;
+    d = &e;
+    cout<<"new value of d is "<<*d<<'\n';
+    cout<<"address of d is "<<d<<'\n';
+
+    int& f = a;
+    cout<<"value of f is "<<f<<'\n';
+    cout<<"the address of f is "<<&f<<'\n';
+    f = e;
+    cout<<"value of f is "<<f<<'\n';
+    cout<<"the address of f is"<<&f<<'\n';
 
     return 0;
 }
