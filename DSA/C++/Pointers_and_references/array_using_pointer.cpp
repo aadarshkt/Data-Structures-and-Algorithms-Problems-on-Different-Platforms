@@ -7,7 +7,8 @@ int32_t main()
     ios::sync_with_stdio(false);
     cin.tie(NULL);
 
-    int *a = new int[5]; //get address to new array instantiation.
+    //dynamic memory allocation.
+    int *a = new int[5]; //get address to first element of array.
 
     for(int i=0;i<5;i++){
         a[i] = i+1;
