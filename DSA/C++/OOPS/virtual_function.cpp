@@ -12,10 +12,13 @@ class Parent{
 };
 
 class child1 : public Parent{
-    public:
+    private:
+        //even if you make overriden version private but original virtual function of base
+        //class is public then derived version will be called
         void print(){
             cout<<"Child is called "<<'\n';
         }
+    public:
         void fun(int x){
             cout<<"The value of the derived is "<<x<<'\n';
         }
