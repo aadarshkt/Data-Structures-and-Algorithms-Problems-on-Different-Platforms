@@ -9,34 +9,32 @@ using namespace std;
 
 #define int long long
 
+int *fun(int a){
+    int *b = &a;
+    return b;
+}
+
 int32_t main()
 {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
 
-    int t;
-    cin >> t;
-    while(t--){
-        int n;cin>>n;
-        string s;cin>>s;
-        int pos=-1;
-        for(int i=0;i<n;i++){
-            if(s[i]=='1'){
-                pos=i;
-                break;
-            }
-        }
-        if(pos==-1){
-            cout<<s<<'\n';
-            continue;
-        }
-        for(int i=n-1;i>=pos;i--){
-            if(i+2<n){
-                s[i]='1',s[i+1]='0',s[i+2]='0';
-            }
-        }
-        cout<<s<<'\n';
-    }
+    string *s,y;
+    string a = "hello";
+    s = &a;
+    y = a;
+
+    cout<<s<<'\n';
+    cout<<y<<'\n';
+
+    int b = 5;
+    int *c = &b;
+    cout<<fun(b)<<'\n';
+    cout<<c<<'\n';
+
+    int e = 5, f = 10, g = 15;
+    int *arr[3] = {&e, &f, &g};
+    cout<<arr[1]<<'\n';
 
     return 0;
 }
