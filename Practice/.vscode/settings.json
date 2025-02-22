@@ -110,7 +110,9 @@
     "stacktrace": "cpp",
     "stdfloat": "cpp",
     "stop_token": "cpp",
-    "syncstream": "cpp"
+    "syncstream": "cpp",
+    "execution": "cpp",
+    "print": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled",
   "cph.general.onceMaintainerMessage": false

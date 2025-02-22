@@ -1,0 +1,18 @@
+1, solvable, solved, 1:
+3 3 U
+
+2, solvable, not solved, 1000
+
+3, solvable, not solved, 1000
+
+4, not solvable
+
+5, solvable, solved, 2:
+2 3 U
+3 3 U
+
+6, solvable, solved, 3:
+1 3 L
+2 3 U
+3 3 U
+
