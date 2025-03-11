@@ -1,0 +1,17 @@
+Aim. 
+
+1. Find the shortest distance from a given node to every other node similarily like Bellman_Ford.
+2. SSSPP - Single Source Shortest Path Problem.
+
+Process.
+
+1. Basic process -> Mark - Relax - choose - Mark - relax - choose.
+
+Mark - Current set of minimum distance nodes from source.
+Relax - Relax all connected nodes with newly marked vertices.
+Choose - Choose the lowest distance node from newly marked vertex and Mark it.
+
+Requirements - 
+
+1. dist[] - stores distance of every vertex from source node and dist[s] = 0
+2. mark[] - stores the current set of nodes that are 100% shortest distance from source.

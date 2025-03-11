@@ -3,3 +3,7 @@ Aim
 1. Finds shortest path from one node to all other nodes, given that no negative cycles are present.
 2. If there is negative cycle, this algorithm can detect this.
 
+Process. 
+
+1. For every edge, relax its two participants for n-1 rounds.
+

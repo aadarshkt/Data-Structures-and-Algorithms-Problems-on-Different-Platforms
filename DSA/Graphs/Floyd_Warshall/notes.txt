@@ -1,3 +1,7 @@
 Aim. 
 
 1. Find minimum distance between any two nodes, with no negative cycle.
+
+Process.
+
+1. For every intermediate node K find dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j])
