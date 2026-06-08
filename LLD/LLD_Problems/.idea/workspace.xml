@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="571a71dc-e25b-445b-af29-9eee5de723e7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/LLD.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/copilot.data.migration.agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/copilot.data.migration.ask.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/copilot.data.migration.edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/copilotDiffState.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/dictionaries/project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/google-java-format.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Casting/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Casting/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Casting/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Casting/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Generics/GenericInterface/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Generics/GenericInterface/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Generics/GenericInterface/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Inner/Inner.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Inner/src/Outer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicketBooking/Artist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicketBooking/Booking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicketBooking/BookingException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicketBooking/BookingManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicketBooking/BookingStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicketBooking/Concert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicketBooking/EmailNotification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicketBooking/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicketBooking/PaymentMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicketBooking/SMSNotification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicketBooking/Seat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicketBooking/SeatStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicketBooking/SeatType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicketBooking/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicketBooking/temp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/Bike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/CreditCardStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/DebitCardStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/DriverStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/FeeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/Helper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/Luxury.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/ManageRide.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/MatchRiderDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/MatchingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/NearestFirstStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/PaymentMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/PaymentStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/Ride.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/RideStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/Rider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/Shared.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/UberApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uber/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parkingLot/Bike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parkingLot/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parkingLot/DisplayBoard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parkingLot/EntityList.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parkingLot/EntryGate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parkingLot/ExitGate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parkingLot/Gate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parkingLot/HolidayPricingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parkingLot/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parkingLot/ParkingFloor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parkingLot/ParkingLot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parkingLot/ParkingSpot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parkingLot/ParkingSpotType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parkingLot/ParkingTicket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parkingLot/PaymentStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parkingLot/PricingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parkingLot/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parkingLot/VehicleType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rateLimiter/FixedWindowStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rateLimiter/Identifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rateLimiter/RateLimitState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rateLimiter/RateLimitStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rateLimiter/RateLimitStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rateLimiter/RateLimiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rateLimiter/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rateLimiter/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rateLimiter/entities.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rateLimiter/requirements_lld.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOPS-Practice/OOPS-Practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOPS-Practice/src/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOPS-Practice/src/CreditCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOPS-Practice/src/DebitCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOPS/Inheritance/Inheritance.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOPS/Inheritance/src/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOPS/Inheritance/src/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOPS/OOPS.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOPS/Polymorphism/Polymorphism.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOPS/Polymorphism/practice/Child.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOPS/Polymorphism/practice/Parent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOPS/Polymorphism/practice/Practice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOPS/Polymorphism/src/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOPS/Polymorphism/src/Shapes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOPS/Polymorphism/src/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOPS/Polymorphism/src/Triangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOPS/access-control/access-control.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOPS/access-control/src/Child.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOPS/access-control/src/Parent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Output_Questions/Output_Questions.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Output_Questions/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Singleton/Singleton.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Singleton/src/Parent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Static/Static.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Temp/Temp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Temp/src/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Temp/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Temp/src/Static.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Temp/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../abstract-interface-practice/abstract-interface-practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../abstract-interface-practice/src/Auto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../abstract-interface-practice/src/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../abstract-interface-practice/src/ElectricCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../abstract-interface-practice/src/Problem.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../abstract-interface-practice/src/Tesla.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../abstract-interface-practice/src/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../abstract/abstract.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../abstract/src/Child.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../abstract/src/Parent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dependency-injection/Guice/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dependency-injection/Guice/.idea/externalDependencies.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dependency-injection/Guice/.idea/google-java-format.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dependency-injection/Guice/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dependency-injection/Guice/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dependency-injection/Guice/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dependency-injection/Guice/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dependency-injection/Guice/Guice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dependency-injection/Guice/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dependency-injection/Guice/MessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dependency-injection/Guice/NotificationModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dependency-injection/Guice/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dependency-injection/Guice/SMSService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dependency-injection/Guice/out/production/Guice/Guice/Guice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dependency-injection/WithDI/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dependency-injection/WithDI/IMessageSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dependency-injection/WithDI/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dependency-injection/WithDI/WithDI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dependency-injection/WithoutDI/EmailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dependency-injection/WithoutDI/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dependency-injection/WithoutDI/WithoutDI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/.idea/copilot.data.migration.agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/.idea/copilot.data.migration.ask.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/.idea/copilot.data.migration.edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/.idea/dictionaries/project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/.idea/externalDependencies.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/.idea/google-java-format.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Command/GUIApplication/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Command/Restaurant/Chef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Command/Restaurant/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Command/Restaurant/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Command/Restaurant/MakeBurgerCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Command/Restaurant/MakePizzaCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Command/Restaurant/Waiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Command/Standard/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Command/Standard/Goblin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Command/Standard/Wizard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Mediator/Solution/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Mediator/Solution/ConcreteMediator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Mediator/Solution/Mediator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Mediator/Solution/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Mediator/Solution/User1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Mediator/Solution/User2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Memento/Standard/CareTaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Memento/Standard/Star.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Memento/Standard/StarMemento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Memento/Standard/StarType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Memento/TextEditor/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Memento/TextEditor/Editor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Memento/TextEditor/EditorCareTaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Observer/Problem/WeatherDevice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Observer/Problem/WeatherStation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Observer/Problem/WithoutObserverPattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Observer/Solution/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Observer/Solution/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Observer/Solution/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Observer/Solution/WeatherDevice1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Observer/Solution/WeatherDevice2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Observer/Solution/WeatherStation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/State/Problem/DirectionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/State/Problem/TransportMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/State/Solution/Bike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/State/Solution/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/State/Solution/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/State/Solution/DirectionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/State/Solution/TransportMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/State/Standard/AngryState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/State/Standard/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/State/Standard/Mammoth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/State/Standard/PeacefulState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/State/Standard/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Strategy/Problem/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Strategy/Problem/WithoutStrategyPattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Strategy/Solution/CreditCardPayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Strategy/Solution/DebitCardPayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Strategy/Solution/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Strategy/Solution/PaymentStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Strategy/Solution/WithStrategyPattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Strategy/Standard/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Strategy/Standard/DaemonSlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Strategy/Standard/GunStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Strategy/Standard/KnifeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Strategy/Standard/Strategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Template/Problem/CSVParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Template/Problem/PDFParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Template/Problem/WithoutTemplatePattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Template/Solution/CSVParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Template/Solution/DataParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Template/Solution/PDFParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Behavioural/Template/Solution/WithTemplatePattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Problem/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Problem/WindowsButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Problem/WindowsScrollBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Solution/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Solution/Button.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Solution/GuiFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Solution/MacOSButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Solution/MacOSGUIFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Solution/MacOSScrollBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Solution/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Solution/ScrollBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Solution/WindowsButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Solution/WindowsGUIFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Solution/WindowsScrollBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Standard/Army.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Standard/Castle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Standard/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Standard/ElfArmy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Standard/ElfCastle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Standard/ElfKing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Standard/ElfKingdomFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Standard/FactoryMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Standard/King.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Standard/KingdomFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Standard/OrcArmy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Standard/OrcCastle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Standard/OrcKing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Abstract_Factory_Pattern/Standard/OrcKingdomFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Builder/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Builder/Computer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Factory_Pattern/Problem/Bike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Factory_Pattern/Problem/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Factory_Pattern/Problem/Transport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Factory_Pattern/Problem/TransportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Factory_Pattern/Solution/Bike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Factory_Pattern/Solution/Bus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Factory_Pattern/Solution/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Factory_Pattern/Solution/Transport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Factory_Pattern/Solution/TransportFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Factory_Pattern/Solution/TransportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Factory_Pattern/Standard/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Factory_Pattern/Standard/Coin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Factory_Pattern/Standard/CoinFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Factory_Pattern/Standard/CoinType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Factory_Pattern/Standard/CopperCoin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Factory_Pattern/Standard/GoldCoin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Prototype/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Prototype/Problem/GameBoard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Prototype/Problem/GameClientWithoutPrototype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Prototype/Problem/Piece.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Prototype/Prototype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Prototype/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Prototype/Solution/GameBoard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Prototype/Solution/GameClientWithPrototype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Prototype/Solution/Piece.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Prototype/Solution/Prototype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Prototype/Standard/Beast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Prototype/Standard/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Prototype/Standard/HeroFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Prototype/Standard/HeroFactoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Prototype/Standard/Mage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Prototype/Standard/OrcBeast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Prototype/Standard/OrcMage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Prototype/Standard/Prototype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Singleton/Problem/AppSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Singleton/Problem/WithoutSingletonPattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Singleton/Solution/AppSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Creational/Singleton/Solution/WithSingletonPattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/adapter/solution/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/adapter/solution/EmailNotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/adapter/solution/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/adapter/solution/SendGridAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/adapter/solution/SendGridService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/adapter/standard/Captain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/adapter/standard/FishingBoat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/adapter/standard/FishingBoatAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/adapter/standard/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/adapter/standard/RowingBoat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/composite/problem/File.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/composite/problem/FileSystemApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/composite/problem/Folder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/composite/solution/File.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/composite/solution/FileComposite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/composite/solution/Folder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/composite/solution/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/composite/standard/Letter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/composite/standard/LetterComposite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/composite/standard/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/composite/standard/Sentence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/composite/standard/Word.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/decorator/problem/CheezeOlivePizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/decorator/problem/CheezePizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/decorator/problem/Pizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/decorator/problem/PizzaApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/decorator/problem/SimplePizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/decorator/solution/CheezeDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/decorator/solution/OliveDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/decorator/solution/Pizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/decorator/solution/PizzaApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/decorator/solution/SimplePizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/decorator/solution2/CheezeDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/decorator/solution2/OliveDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/decorator/solution2/Pizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/decorator/solution2/PizzaApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/decorator/solution2/PizzaDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/decorator/solution2/SimplePizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/decorator/standard/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/decorator/standard/ClubbedTroll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/decorator/standard/SimpleTroll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/decorator/standard/Troll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/facade/problem/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/facade/problem/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/facade/problem/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/facade/problem/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/facade/solution/APIGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/facade/solution/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/facade/solution/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/facade/solution/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/facade/solution/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/proxy/problem/Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/proxy/problem/ImageApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/proxy/problem/RealImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/proxy/solution/Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/proxy/solution/ImageApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/proxy/solution/ProxyImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/proxy/solution/RealImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/proxy/standard/IvoryTower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/proxy/standard/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/proxy/standard/Wizard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/proxy/standard/WizardProxyTower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/Structural/proxy/standard/WizardTower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/design-patterns.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/target/classes/design-patterns.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/target/classes/target/classes/design-patterns.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/target/classes/target/classes/target/classes/design-patterns.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/target/classes/target/classes/target/classes/target/classes/design-patterns.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-patterns/target/classes/target/classes/target/classes/target/classes/target/classes/design-patterns.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../interface/interface.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../interface/src/Business.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../interface/src/contract1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../interface/src/contract2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/LLD/Guice/Guice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/LLD/Guice/out/production/Guice/Guice/Guice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/Binary Search Tree/a.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/Binary Search Tree/a.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/Tree/bottomViewBinaryTree.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/Tree/bottomViewBinaryTree.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/Tree/topViewOfBinaryTree.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/Tree/topViewOfBinaryTree.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/Tree/traversal.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practice/abc.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practice/abc.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../readme.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotChats">
+    <option name="panelChat">
+      <chat>
+        <option name="activeSessionId" value="cc563ffa-d891-4a13-bdd5-57b591a43865" />
+        <option name="sessions">
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="cc563ffa-d891-4a13-bdd5-57b591a43865" />
+            <option name="modeId" value="Agent" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+        </option>
+        <option name="type" value="PANEL" />
+      </chat>
+    </option>
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/aadarshkt/Desktop/Code/LLD/LLD_Problems" value="3BZVpMuUiIke0SFAjDYzInQB5eF" />
+      <entry key="_/Users/aadarshkt/Desktop/Code/LLD/Problems" value="3BFKPgkWpL2udGJwKFimEwx6aPi" />
+    </persistenceIdMap>
+  </component>
+  <component name="CopilotUserSelectedModel">
+    <selectedModels>
+      <entry key="chat-panel" value="GPT-4o" />
+      <entry key="agent-panel" value="GPT-4o" />
+    </selectedModels>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="76" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;aadarshkt&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/aadarshkt/DSA.git&quot;,
+    &quot;accountId&quot;: &quot;2c4f4b42-09b3-4ede-86f8-139c59857c19&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="3BFKPgkWpL2udGJwKFimEwx6aPi" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.temp.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/aadarshkt/Desktop/Code/LLD/LLD_Problems&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion.inline&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="temp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TicketBooking.temp" />
+      <module name="Problems" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TicketBooking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.temp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="571a71dc-e25b-445b-af29-9eee5de723e7" name="Changes" comment="" />
+      <created>1774079355595</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1774079355595</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

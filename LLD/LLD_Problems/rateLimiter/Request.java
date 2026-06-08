@@ -1,9 +1,12 @@
 package rateLimiter;
 
+import lombok.Data;
+
 import java.time.LocalDateTime;
 
+@Data
 public class Request {
-    String requestId;
+    Identifier requestId;
     LocalDateTime timeStamp;
-    Identifier userId;
+    Identifier identifierId;
 }
