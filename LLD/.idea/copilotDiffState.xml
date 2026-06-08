@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="/Seat (snapshot).java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="/Seat (snapshot).java" />
+              <option name="originalContent" value="package TicketBooking;&#10;&#10;import lombok.Data;&#10;&#10;import java.util.concurrent.atomic.AtomicBoolean;&#10;&#10;@Data&#10;public class Seat {&#10;    private String seatID;&#10;    private SeatType seatType;&#10;    private final AtomicBoolean isBooked = new AtomicBoolean(false);&#10;    private double SeatPrice;&#10;&#10;    public Seat(String seatID, SeatType seatType) {&#10;        this.seatID = seatID;&#10;        this.seatType = seatType;&#10;    }&#10;&#10;    /**&#10;     * Atomically tries to book this seat.&#10;     * Returns true only for the ONE thread that flips isBooked false → true.&#10;     * All other concurrent threads get false — no lock needed.&#10;     */&#10;    public boolean tryBook() {&#10;        return isBooked.compareAndSet(false, true);&#10;    }&#10;&#10;    public boolean isBooked() {&#10;        return isBooked.get();&#10;    }&#10;}&#10;" />
+              <option name="updatedContent" value="package TicketBooking;&#10;&#10;import lombok.Data;&#10;&#10;import java.util.concurrent.atomic.AtomicReference;&#10;&#10;@Data&#10;public class Seat {&#10;    private String seatID;&#10;    private SeatType seatType;&#10;    private final AtomicReference&lt;SeatStatus&gt; seatStatus = new AtomicReference&lt;&gt;(SeatStatus.AVAILABLE);&#10;    private double SeatPrice;&#10;&#10;    public Seat(String seatID, SeatType seatType) {&#10;        this.seatID = seatID;&#10;        this.seatType = seatType;&#10;    }&#10;&#10;    /**&#10;     * Atomically tries to book this seat.&#10;     * Returns true only for the ONE thread that flips seatStatus AVAILABLE → BOOKED.&#10;     * All other concurrent threads get false — no lock needed.&#10;     */&#10;    public boolean tryBook() {&#10;        return seatStatus.compareAndSet(SeatStatus.AVAILABLE, SeatStatus.BOOKED);&#10;    }&#10;&#10;    /**&#10;     * Atomically tries to set this seat to PENDING (e.g., during payment window).&#10;     * Returns true only for the ONE thread that flips seatStatus AVAILABLE → PENDING.&#10;     */&#10;    public boolean tryPend() {&#10;        return seatStatus.compareAndSet(SeatStatus.AVAILABLE, SeatStatus.PENDING);&#10;    }&#10;&#10;    /**&#10;     * Confirms a PENDING seat as BOOKED.&#10;     * Returns true if the seat was successfully moved from PENDING → BOOKED.&#10;     */&#10;    public boolean confirmBooking() {&#10;        return seatStatus.compareAndSet(SeatStatus.PENDING, SeatStatus.BOOKED);&#10;    }&#10;&#10;    /**&#10;     * Releases a PENDING seat back to AVAILABLE (e.g., payment timeout).&#10;     * Returns true if the seat was successfully moved from PENDING → AVAILABLE.&#10;     */&#10;    public boolean releasePending() {&#10;        return seatStatus.compareAndSet(SeatStatus.PENDING, SeatStatus.AVAILABLE);&#10;    }&#10;&#10;    public SeatStatus getSeatStatus() {&#10;        return seatStatus.get();&#10;    }&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

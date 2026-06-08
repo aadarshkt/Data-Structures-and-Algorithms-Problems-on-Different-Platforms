@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/OOPS/Inheritance/Inheritance.iml" filepath="$PROJECT_DIR$/OOPS/Inheritance/Inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inner/Inner.iml" filepath="$PROJECT_DIR$/Inner/Inner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/LLD.iml" filepath="$PROJECT_DIR$/.idea/LLD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOPS/OOPS.iml" filepath="$PROJECT_DIR$/OOPS/OOPS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOPS-Practice/OOPS-Practice.iml" filepath="$PROJECT_DIR$/OOPS-Practice/OOPS-Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Output_Questions/Output_Questions.iml" filepath="$PROJECT_DIR$/Output_Questions/Output_Questions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOPS/Polymorphism/Polymorphism.iml" filepath="$PROJECT_DIR$/OOPS/Polymorphism/Polymorphism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Singleton/Singleton.iml" filepath="$PROJECT_DIR$/Singleton/Singleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Static/Static.iml" filepath="$PROJECT_DIR$/Static/Static.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Temp/Temp.iml" filepath="$PROJECT_DIR$/Temp/Temp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/abstract/abstract.iml" filepath="$PROJECT_DIR$/abstract/abstract.iml" />
+      <module fileurl="file://$PROJECT_DIR$/abstract-interface-practice/abstract-interface-practice.iml" filepath="$PROJECT_DIR$/abstract-interface-practice/abstract-interface-practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOPS/access-control/access-control.iml" filepath="$PROJECT_DIR$/OOPS/access-control/access-control.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design-patterns/design-patterns.iml" filepath="$PROJECT_DIR$/design-patterns/design-patterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/interface/interface.iml" filepath="$PROJECT_DIR$/interface/interface.iml" />
+    </modules>
+  </component>
+</project>

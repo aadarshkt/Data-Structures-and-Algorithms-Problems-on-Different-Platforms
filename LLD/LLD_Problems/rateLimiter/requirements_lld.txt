@@ -1,0 +1,82 @@
+Functional requirements
+
+1. Functional Requirements (What the system must do)
+Core Decision Engine: The system must accurately evaluate incoming requests and return a boolean/status indicating whether the request is ALLOWED or DENIED.
+
+Multi-Dimensional Keys: The system must support rate limiting across different granularities:
+
+User ID (Authenticated users)
+
+IP Address (Unauthenticated/Bots)
+
+API Endpoint / Route (e.g., /login vs /getData)
+
+Tenant / Client ID (B2B SaaS models)
+
+--Doubt
+Customizable Rules: It must support distinct limits for different tiers (e.g., Free users get 10 req/min, Premium users get 1000 req/min).
+
+Informative Responses: When denying a request, the system should generate a payload containing:
+
+HTTP 429 "Too Many Requests" status code.
+
+Total limit capacity.
+
+Remaining requests in the window.
+
+A Retry-After timestamp (Epoch time indicating when the bucket resets).
+
+--Doubt
+Dynamic Configuration: Rules should be updatable on the fly without requiring a full system restart or redeployment.
+
+2. Non-Functional Requirements (How the system performs)
+Extremely Low Latency: The rate limiter is in the critical path. Its evaluation logic must execute in single-digit milliseconds to avoid degrading overall API performance.
+
+Memory Efficiency: The underlying data structures must be highly optimized, as the system may need to track millions of unique identifiers simultaneously.
+
+High Availability (Resilience): The system must gracefully handle underlying database or cache failures. It must support a configurable "Fail Open" (allow traffic) or "Fail Closed" (block traffic) fallback strategy.
+
+Accuracy vs. Performance Trade-off: The system should explicitly define its tolerance for slight inaccuracies (e.g., allowing 1-2 extra requests) in favor of massive throughput scaling.
+
+3. Algorithmic Requirements
+The design must be capable of supporting (or easily swapping between) standard industry algorithms based on the use case:
+
+Fixed Window Counter: Memory efficient, resets exactly at interval boundaries, but susceptible to edge-case traffic bursts.
+
+Sliding Window Log: Perfectly accurate, but heavily memory-intensive (tracks every request timestamp).
+
+--Doubt
+Sliding Window Counter: A hybrid approach balancing memory efficiency and burst smoothing.
+
+Token Bucket: The industry standard for allowing controlled bursts while maintaining a steady refill rate.
+
+--Doubt
+Leaky Bucket: Best for smoothing out spiky traffic into a perfectly steady queue/stream.
+
+4. Object-Oriented Design & Extensibility (The LLD Core)
+Separation of Concerns: Clean boundary between configuration (RuleEngine), state management (RateLimitStore), and execution logic (RateLimitStrategy).
+
+Strategy Pattern: The system must utilize the Open/Closed Principle, allowing new algorithms (e.g., Leaky Bucket) to be added without modifying existing code.
+
+--Doubt
+Factory Pattern: A mechanism (RateLimiterFactory) to dynamically inject and route traffic to the correct algorithm based on the rule configuration.
+
+--Doubt
+Interface Segregation: Abstract interfaces for the Cache/Storage layer, allowing the system to swap between InMemoryStore and RedisStore without breaking the core logic.
+
+5. Concurrency & Thread Safety
+Local Thread Safety: For single-node deployments or local caching, the system must handle simultaneous requests from the same user across multiple JVM/Node threads without race conditions (e.g., using ConcurrentHashMap and AtomicInteger).
+
+Fine-Grained Locking: Avoid global locks; synchronization should happen only at the specific identifier level (lock-striping).
+
+Distributed Atomicity: When utilizing an external store like Redis, the read-evaluate-update cycle must be perfectly atomic to prevent distributed race conditions (e.g., executing the logic via a single Redis Lua script).
+
+6. Distributed Systems Integration
+--Doubt batch token allowance
+Network Optimization (Batching): The design should account for network I/O bottlenecks, potentially using local in-memory counters that flush to a centralized Redis cache asynchronously to reduce latency.
+
+--Redis specific implementation.
+Data Expiration: The system must implement mechanisms like Time-To-Live (TTL) to automatically clean up stale identifier keys and prevent memory leaks.
+
+--No idea what this means.
+Framework Interception: The core application logic must be decoupled from the HTTP layer. The rate limiter should be triggered via framework-native Middleware, Interceptors, or Filters so business controllers remain clean.

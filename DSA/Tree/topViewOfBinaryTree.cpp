@@ -35,6 +35,34 @@ void dfs(Node* root,int hd,int lvl){
     dfs(root->right,hd+1,lvl+1);
 }
 
+vector<int> topView(Node* root){
+    if(root==NULL)return {};
+
+    queue<pair<int,Node*>> q;
+    q.push({0, root});
+
+    map<int, Node*> mp;
+    vector<int> ans;
+
+    while(!q.empty()) {
+        Node* curr = q.front().second;
+        int hd = q.front().first;
+        q.pop();
+
+        if(!mp.count(hd))mp[hd] = curr;
+
+        if(curr->left)q.push({hd-1, curr->left});
+        if(curr->right)q.push({hd+1, curr->right});
+    }
+
+    for(auto it : mp){
+        ans.push_back(it.second->data);
+    }
+
+    return ans;
+
+}
+
 int32_t main()
 {
     ios::sync_with_stdio(false);

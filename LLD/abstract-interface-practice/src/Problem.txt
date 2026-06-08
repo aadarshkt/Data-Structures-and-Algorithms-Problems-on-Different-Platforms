@@ -1,0 +1,21 @@
+Requirements:
+
+All Vehicles (Car, Bike, Auto) should have:
+
+A brand
+
+A drive() method (behavior is different for each vehicle).
+
+A common fuelUp() method (same for all).
+
+Some vehicles may have special abilities:
+
+Electric vehicles can chargeBattery().
+
+Luxury vehicles can provideWaterBottle().
+
+You must:
+
+Use abstract classes for shared state and base behavior.
+
+Use interfaces for optional/capability-based features.

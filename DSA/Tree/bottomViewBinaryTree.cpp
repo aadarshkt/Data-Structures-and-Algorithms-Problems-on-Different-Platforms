@@ -12,7 +12,7 @@ using namespace std;
 
 
 //maintain horizontal and levels of all nodes
-//in front view choose a horizontal distance will least lvl value
+//in top view choose a horizontal distance will least lvl value
 //in bottom view choose a hd will max lvl value.
 
 struct Node{
@@ -36,6 +36,37 @@ void dfs(Node* root,int hd,int lvl){
     dfs(root->left,hd-1,lvl+1);
     dfs(root->right,hd+1,lvl+1);
 }
+
+//Iterative approach using queue
+vector<int> bottomView(Node* root){
+    if(root==NULL)return {};
+
+    queue<pair<int,Node*>> q;
+    q.push({0, root});
+
+    map<int, Node*> mp;
+    vector<int> ans;
+
+    while(!q.empty()) {
+        Node* curr = q.front().second;
+        int hd = q.front().first;
+        q.pop();
+
+        mp[hd] = curr;
+
+        if(curr->left)q.push({hd-1, curr->left});
+        if(curr->right)q.push({hd+1, curr->right});
+    }
+
+    for(auto it : mp){
+        ans.push_back(it.second->data);
+    }
+
+    return ans;
+
+}
+
+
 
 int32_t main()
 {

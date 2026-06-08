@@ -1,0 +1,30 @@
+1. RateLimiter - isAllowed(Identifier, Request)
+2. RuleEngine - storing limits values/constraints - LimitConfig/RateLimitConfig
+3. Storage - storing current value reached in memory storage can be switched between inmemorycache and rediscache
+4. Request - userId, timestamp
+5. Response -
+6. User
+
+Interface -
+
+1. RateLimiterStrategy
+2.
+
+
+Final architecture - (Gemini)
+
+
+Interview Wrap-Up: Your Final Architecture
+You have successfully architected a production-ready rate limiter. If you were to draw this on a whiteboard at the end of an LLD interview, here is the complete, high-level summary of what you built:
+
+The Core Entities: A RuleEngine that maps user identifiers to their specific limits, cleanly separating configuration from the counting logic.
+
+The Storage Layer: A centralized Redis cache using TTL to automatically reset limits without memory leaks.
+
+The Optimization: An in-memory, thread-safe batching mechanism (ConcurrentHashMap + AtomicInteger) that updates Redis asynchronously, drastically reducing network I/O and latency.
+
+The Distributed Setup: The rate-limiting logic sits at the API Gateway (the edge of the network), rejecting bad traffic before it ever touches your core backend services.
+
+The Client Contract: A structured RateLimitResponse that passes HTTP headers back to the frontend (like Retry-After), so clients know exactly when they can resume requests.
+
+The Resilience Strategy: A "Fail Open" fallback mechanism ensuring that a Redis crash does not take down the entire company's revenue stream.
