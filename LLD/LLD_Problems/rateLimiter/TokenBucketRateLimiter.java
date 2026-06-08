@@ -3,6 +3,9 @@ package rateLimiter;
 public class TokenBucketRateLimiter implements RaterLimiter {
 
     private final TokenBucketConfig tokenBucketConfig;
+    private int currentTokens;
+    private Long lastRefillTimestamp;
+
 
     public TokenBucketRateLimiter(TokenBucketConfig tokenBucketConfig) {
         this.tokenBucketConfig = tokenBucketConfig;
@@ -11,18 +14,18 @@ public class TokenBucketRateLimiter implements RaterLimiter {
     void refill() {
         Long now = System.currentTimeMillis();
 
-        int tokenAvailable = Math.toIntExact((now - tokenBucketConfig.getLastRefillTimestamp()) * tokenBucketConfig.getRefillRatePerSecond() / 1000);
-        tokenBucketConfig.setCurrentTokens(Math.min(tokenAvailable + tokenBucketConfig.getCurrentTokens(), tokenBucketConfig.getMaxCapacity()));
+        int tokenAvailable = Math.toIntExact((now - lastRefillTimestamp) * tokenBucketConfig.getRefillRatePerSecond() / 1000);
+        currentTokens = Math.min(tokenAvailable + currentTokens, tokenBucketConfig.getMaxCapacity());
 
-        this.tokenBucketConfig.setLastRefillTimestamp(now);
+        if(tokenAvailable > 0) lastRefillTimestamp = now;
     }
 
     @Override
     public synchronized boolean allowRequest() {
         refill();
 
-        if(tokenBucketConfig.getCurrentTokens() > 0) {
-            tokenBucketConfig.setCurrentTokens(tokenBucketConfig.getCurrentTokens()-1);
+        if(currentTokens > 0) {
+            currentTokens--;
             return true;
         }
         return false;

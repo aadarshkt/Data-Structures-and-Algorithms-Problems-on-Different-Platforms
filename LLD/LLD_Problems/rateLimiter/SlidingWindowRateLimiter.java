@@ -8,7 +8,7 @@ public class SlidingWindowRateLimiter implements RaterLimiter {
     private final SlidingWindowConfig slidingWindowConfig;
     private final Queue<Long> requestTimeStamps;
 
-    public SlidingWindowRateLimiter(SlidingWindowConfig slidingWindowConfig, Queue<Long> requestTimeStamps) {
+    public SlidingWindowRateLimiter(SlidingWindowConfig slidingWindowConfig) {
         this.slidingWindowConfig = slidingWindowConfig;
         this.requestTimeStamps = new LinkedList<>();
     }
@@ -21,8 +21,11 @@ public class SlidingWindowRateLimiter implements RaterLimiter {
             requestTimeStamps.poll();
         }
 
-        requestTimeStamps.add(now);
+        if(requestTimeStamps.size() < slidingWindowConfig.getMaxRequests()) {
+            requestTimeStamps.add(now);
+            return true;
+        }
 
-        return requestTimeStamps.size() <= slidingWindowConfig.getMaxRequests();
+        return false;
     }
 }

@@ -16,7 +16,6 @@ public class RateLimiterService {
 
     public boolean isAllowed(Identifier clientId) {
         RaterLimiter limiter = clientLimits.computeIfAbsent(clientId, key -> factory.create(ruleEngine.getRule(key)));
-
         return limiter.allowRequest();
     }
 }

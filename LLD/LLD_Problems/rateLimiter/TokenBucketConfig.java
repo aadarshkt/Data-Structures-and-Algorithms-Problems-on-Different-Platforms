@@ -9,7 +9,5 @@ import lombok.RequiredArgsConstructor;
 @EqualsAndHashCode(callSuper = false)
 public class TokenBucketConfig extends LimitConfig {
     private final int maxCapacity;
-    private Long lastRefillTimestamp;
     private final int refillRatePerSecond;
-    private int currentTokens;
 }
