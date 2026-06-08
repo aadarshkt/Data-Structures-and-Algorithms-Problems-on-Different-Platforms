@@ -9,6 +9,8 @@ public class TokenBucketRateLimiter implements RaterLimiter {
 
     public TokenBucketRateLimiter(TokenBucketConfig tokenBucketConfig) {
         this.tokenBucketConfig = tokenBucketConfig;
+        this.currentTokens = tokenBucketConfig.getMaxCapacity();
+        this.lastRefillTimestamp = System.currentTimeMillis();
     }
 
     void refill() {
