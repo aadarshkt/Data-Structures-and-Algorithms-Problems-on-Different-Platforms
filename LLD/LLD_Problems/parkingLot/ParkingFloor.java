@@ -8,6 +8,6 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 public class ParkingFloor {
-    int floorNumber;
-    List<ParkingSpot> parkingSpots;
+    private int floorNumber;
+    private List<ParkingSpot> parkingSpots;
 }

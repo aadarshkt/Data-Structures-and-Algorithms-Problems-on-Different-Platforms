@@ -1,10 +1,11 @@
 package parkingLot;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 
 @AllArgsConstructor
+@Data
 public abstract class Vehicle {
-    String licensePlate;
-    Member member;
-    VehicleType vehicleType;
+    private String licensePlate;
+    private VehicleType vehicleType;
 }
